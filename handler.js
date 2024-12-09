@@ -575,15 +575,15 @@ global.dfail = (type, m, conn) => {
 
 let msg = {
 rowner: '*¡Este comando es exclusivo para mi desarrollador!*',
-owner: '*¡Esta función solo puede ser usada por mis propietarios!*',
-mods: '*¡Solo mis moderadores pueden hacer uso de este comando!*',
-premium: '*¡Solo usuarios premium pueden usar esta función!*',
-group: '*¡Este comando solo se puede usar en grupos!*',
-private: '*¡Esta función solo se puede utilizar en chat privado!*',
-admin: '*¡Este comando solo puede ser utilizado por admins!*',
-botAdmin: '*¡Para realizar la función debo ser admin!*',
-unreg: '*¡Para continuar con esta función debera registrarse!*\n\n!reg nombre.edad\n\n*Uso correcto* : !reg Azami.21',
-restrict: '*¡Esta característica esta desactivada!*'
+owner: '*¡هدا الامر لمطوري \n\n> ahmed aligue!*',
+mods: '*لا يمكنك استخدام هدا الامر!*',
+premium: '*¡هدا الامر لمستخديمي premium!*',
+group: '*¡جرب في grupos!*',
+private: '*¡جرب في private chat!*',
+admin: '*¡هذا الامر ل admins!*',
+botAdmin: '*¡هذا الامر ل botadmin!*',
+unreg: '*¡لتغيل البوت المرجو التسجيل اولا هكاذا!*\n\n!reg الاسم.العمر\n\nمتال : .reg ahmed.18',
+restrict: '*¡هدا الامر مقفل!*'
 }[type]
 if (msg) return conn.reply(m.chat, msg, m, { contextInfo:{ externalAdReply: {title: '📖'  + saludo + ' ' + nombre, body: dev, sourceUrl: global.channel, thumbnailUrl: fotos }}})
 
